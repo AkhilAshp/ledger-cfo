@@ -6,7 +6,8 @@ const ProblemSection: React.FC = () => {
         "Compliance deadlines that sneak up",
         "No real-time visibility into burn or runway",
         "Multiple vendors with no single owner",
-        "Last-minute stress before board or investor calls"
+        "Last-minute stress before board or investor calls",
+        "Unclear ownership across US and India entities"
     ];
 
     return (

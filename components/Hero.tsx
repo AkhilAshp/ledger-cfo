@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const slides = [
   {
-    headline: "Your Finance Partner for US ↔ India Startups",
+    headline: "Your Finance Partner for US <> India Startups",
     subheadline:
       "Bookkeeping, Tax, CFO services & Finance Ops for founders operating across the US–India corridor.",
   },
@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-16">
               <a
                 href="https://cal.com/ayush-garg-ledger/discovery-call"
                 target="_blank"
@@ -101,6 +101,27 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
+            {/* Funded By Section */}
+            {/* Funded By Section */}
+            {/* <br /> */}
+            <div className="mt-20 mb-12 border-b border-black/5 pb-10">
+
+              <p className="text-xs font-bold tracking-[0.2em] text-muted uppercase mb-6">
+                OUR CLIENTS ARE FUNDED BY
+              </p>
+              <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                {["Y Combinator", "Together Fund", "WestBridge Capital", "Forum Ventures", "Unusual Ventures"].map((partner) => (
+                  <span
+                    key={partner}
+                    className="text-xl sm:text-2xl font-serif font-bold text-ink whitespace-nowrap"
+                  >
+                    {partner}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+
             {/* Trusted By + Marquee */}
             <div className="w-full overflow-hidden mask-linear-fade">
               <p className="text-sm font-bold tracking-[0.2em] text-muted uppercase mb-6">
@@ -112,7 +133,7 @@ const Hero: React.FC = () => {
                   className="flex items-center gap-12"
                   animate={{ x: ["0%", "-50%"] }}
                   transition={{
-                    duration: 40,
+                    duration: 25,
                     ease: "linear",
                     repeat: Infinity,
                   }}
