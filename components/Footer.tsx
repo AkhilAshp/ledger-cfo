@@ -15,7 +15,9 @@ const Footer: React.FC = () => {
 
           <div className="flex flex-col items-start gap-4">
             <a
-              href="mailto:hello@ledgerscfo.com"
+              href="https://cal.com/ayush-garg-ledger/discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-ink font-medium px-8 py-4 rounded-sm hover:bg-gray-100 transition-all text-lg inline-block"
             >
               Book a Free CFO Consultation
@@ -67,7 +69,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a href="#pricing" className="hover:text-white transition-colors">
-                    About Pricing
+                    Pricing
                   </a>
                 </li>
                 <li>

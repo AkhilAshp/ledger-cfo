@@ -42,7 +42,11 @@ const WhyLedgersCFO: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
                     {reasons.map((reason, i) => (
                         <div key={i} className="relative pl-8 border-l border-black/10">
-                            <h3 className="text-xl font-bold text-ink mb-3">{reason.title}</h3>
+                            <h3 className="flex items-center gap-3 text-lg font-semibold tracking-wide text-ink mb-3">
+                                <Check className="w-5 h-5 text-ink/70" />
+                                <span>{reason.title}</span>
+                            </h3>
+
                             <p className="text-muted leading-relaxed">
                                 {reason.desc}
                             </p>

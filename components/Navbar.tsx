@@ -11,7 +11,11 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="font-serif text-2xl text-ink font-bold tracking-tight">LedgersCFO</span>
+              <span className="font-serif text-2xl font-medium text-ink tracking-wider">
+                LedgersCFO
+              </span>
+
+
             </a>
           </div>
 
@@ -24,7 +28,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#book" className="bg-ink text-white text-sm font-medium px-5 py-2.5 rounded-sm hover:bg-black transition-all">
+            <a href="https://cal.com/ayush-garg-ledger/discovery-call" target="_blank" rel="noopener noreferrer" className="bg-ink text-white text-sm font-medium px-5 py-2.5 rounded-sm hover:bg-black transition-all">
               Book a Free CFO Call
             </a>
           </div>
@@ -55,7 +59,7 @@ const Navbar: React.FC = () => {
               <a href="#services" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Services</a>
               <a href="#pricing" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Pricing</a>
               <div className="pt-4">
-                <a href="#book" onClick={() => setIsOpen(false)} className="block w-full text-center bg-ink text-white px-5 py-3 rounded-sm font-medium">
+                <a href="https://cal.com/ayush-garg-ledger/discovery-call" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="block w-full text-center bg-ink text-white px-5 py-3 rounded-sm font-medium">
                   Book a Free CFO Call
                 </a>
               </div>

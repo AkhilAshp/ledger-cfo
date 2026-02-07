@@ -9,17 +9,34 @@ const slides = [
   },
   {
     headline: "Always Due-Diligence Ready",
-    subheadline: "Clean books, timely filings, zero compliance stress — raise funds anytime, confidently."
+    subheadline: "Clean books, timely filings, zero compliance stress - raise funds anytime, confidently."
   },
   {
     headline: "Incorporate & Expand to the US",
-    subheadline: "US entity setup, banking, tax & ongoing cross-border compliance — done right from Day 1."
+    subheadline: "US entity setup, banking, tax & ongoing cross-border compliance, done right from Day 1."
   },
   {
     headline: "Fractional CFO for Tech Founders",
-    subheadline: "Clarity on cash, burn, metrics & decisions — without hiring a full-time CFO."
+    subheadline: "Clarity on cash, burn, metrics & decisions - without hiring a full-time CFO."
   }
 ];
+
+const logos = [
+  "/logos/42.png",
+  "/logos/confidohealth.png",
+  "/logos/humanic.png",
+  "/logos/kwanzoo.png",
+  "/logos/maya.png",
+  "/logos/nebulaiq.png",
+  "/logos/reachiso.png",
+  "/logos/roworksai.png",
+  "/logos/scalekit.png",
+  "/logos/shelfex.png",
+  "/logos/vibrantlabs.png",
+  "/logos/wayto.png",
+];
+
+const marqueeLogos = [...logos, ...logos];
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -64,9 +81,11 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-16">
               <a
-                href="#book"
+                href="https://cal.com/ayush-garg-ledger/discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-ink text-white font-medium px-8 py-4 rounded-sm hover:bg-black transition-all flex items-center gap-2 group text-lg"
               >
                 Book a Free CFO Call
@@ -74,10 +93,36 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
-            <div className="mt-16 pt-8 border-t border-black/5">
-              <p className="text-sm text-muted font-medium uppercase tracking-wider">
-                Trusted by 100+ startups and businesses.
+            {/* Marquee Section */}
+            <div className="w-full overflow-hidden mask-linear-fade">
+              <p className="text-sm font-bold tracking-[0.2em] text-muted uppercase mb-6">
+                Trusted by 100+ startups and businesses
               </p>
+              <div className="relative w-full overflow-hidden">
+                <motion.div
+                  className="flex items-center gap-12"
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{
+                    duration: 40,
+                    ease: "linear",
+                    repeat: Infinity,
+                  }}
+                >
+                  {marqueeLogos.map((logo, index) => (
+                    <img
+                      key={index}
+                      src={logo}
+                      alt="Partner logo"
+                      className="
+                        h-8 w-auto object-contain
+                        grayscale opacity-60
+                        hover:grayscale-0 hover:opacity-100
+                        transition-all duration-300
+                      "
+                    />
+                  ))}
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>

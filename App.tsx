@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import PartnerLogos from './components/PartnerLogos';
 import ProblemSection from './components/ProblemSection';
 import WhyLedgersCFO from './components/WhyLedgersCFO';
 import ServicesList from './components/ServicesList';
@@ -19,7 +18,6 @@ const App: React.FC = () => {
 
       <main>
         <Hero />
-        <PartnerLogos />
         <ProblemSection />
         <WhyLedgersCFO />
         <ServicesList />

@@ -50,7 +50,9 @@ const PricingSection: React.FC = () => {
                         </p>
 
                         <a
-                            href="#book"
+                            href="https://cal.com/ayush-garg-ledger/discovery-call"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block w-full text-center bg-ink text-white font-medium py-4 hover:bg-black transition-colors"
                         >
                             Get a Custom Quote
