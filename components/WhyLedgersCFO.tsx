@@ -22,6 +22,10 @@ const WhyLedgersCFO: React.FC = () => {
         {
             title: "Flat pricing",
             desc: "Predictable, boring, fair. No hourly billing surprises."
+        },
+        {
+            title: "Founder-first support",
+            desc: "No email delays, Slack-first, responsive, and proactive."
         }
     ];
 

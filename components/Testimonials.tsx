@@ -9,21 +9,21 @@ const Testimonials: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-paper p-10 border border-black/5">
             <p className="text-xl text-ink leading-relaxed font-serif italic mb-8">
-              "This is exactly the bookkeeper we needed. LedgersCFO is basically like getting a part time CFO and I always have the reports my VCs need ready to go."
+              “Exactly the team we needed. All the US and India finance stuff is sorted now.”
             </p>
             <div>
-              <p className="font-bold text-ink">Mike Bell</p>
-              <p className="text-muted text-sm uppercase tracking-wide">CTO, Scheduler AI</p>
+              <p className="font-bold text-ink">Chaitanya</p>
+              <p className="text-muted text-sm uppercase tracking-wide">Founder, Waytocloud</p>
             </div>
           </div>
 
           <div className="bg-paper p-10 border border-black/5">
             <p className="text-xl text-ink leading-relaxed font-serif italic mb-8">
-              "We helped them to spot burn trends early and course-correct fast, helped them extend their runway by 6 months."
+              “With LedgerCFO, US compliance is no longer a concern. Everything is tracked, filed, and handled proactively.”
             </p>
             <div>
-              <p className="font-bold text-ink">Sarah Jenkins</p>
-              <p className="text-muted text-sm uppercase tracking-wide">Founder, Hazy Retails</p>
+              <p className="font-bold text-ink">Piyush</p>
+              <p className="text-muted text-sm uppercase tracking-wide">Finance Controller, E42 AI</p>
             </div>
           </div>
         </div>

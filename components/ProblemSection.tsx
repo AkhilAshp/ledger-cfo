@@ -2,11 +2,11 @@ import React from 'react';
 
 const ProblemSection: React.FC = () => {
     const problems = [
-        "Books that don’t reconcile",
+        "Books that never fully reconcile",
         "Compliance deadlines that sneak up",
-        "No clear view of burn or runway",
-        "Too many vendors, no single owner",
-        "Stress before board or investor calls"
+        "No real-time visibility into burn or runway",
+        "Multiple vendors with no single owner",
+        "Last-minute stress before board or investor calls"
     ];
 
     return (
@@ -14,12 +14,9 @@ const ProblemSection: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div>
-                        <h2 className="text-5xl sm:text-6xl font-serif text-ink leading-none mb-6">
-                            Finance shouldn’t slow you down.
+                        <h2 className="text-5xl sm:text-6xl font-serif text-ink leading-tight mb-6">
+                            Finance shouldn’t slow you down - but for most founders, it still does.
                         </h2>
-                        <p className="text-2xl text-muted font-medium">
-                            For most founders, it does.
-                        </p>
                     </div>
 
                     <div className="space-y-8">

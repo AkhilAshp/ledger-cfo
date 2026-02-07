@@ -16,22 +16,23 @@ const ComplianceSection: React.FC = () => {
                             <span className="italic opacity-60">before trouble starts.</span>
                         </h2>
                         <p className="text-xl text-white/70 max-w-lg leading-relaxed">
-                            We handle the ugly stuff so you don't face penalties. $10k–$25k fines are common for missed international filings. We prevent them.
+                            We handle the ugly stuff so you don't face penalties. $10k–$25k fines are common for missed international filings. We prevent them. <br />
+                            <span className="text-base italic opacity-80 decoration-slice">(Many India-based founders running US entities miss these compliances)</span>
                         </p>
                     </div>
 
                     <div className="flex-1 grid grid-cols-1 gap-6 w-full">
                         <div className="border border-white/10 p-6 rounded-lg bg-white/5">
-                            <h3 className="text-lg font-bold text-white mb-2">Form 5471 & 5472</h3>
-                            <p className="text-white/60 text-sm">Mandatory for foreign-owned US corps or US corps with foreign subs. Penalty starts at $25,000.</p>
+                            <h3 className="text-lg font-bold text-white mb-2">Form 5471</h3>
+                            <p className="text-white/60 text-sm">Mandatory for foreign investments</p>
                         </div>
                         <div className="border border-white/10 p-6 rounded-lg bg-white/5">
-                            <h3 className="text-lg font-bold text-white mb-2">FinCEN 114 (FBAR)</h3>
-                            <p className="text-white/60 text-sm">Any foreign bank account with &gt;$10k balance must be reported. We track this daily.</p>
+                            <h3 className="text-lg font-bold text-white mb-2">Form 5472</h3>
+                            <p className="text-white/60 text-sm">Mandatory for foreign-owned US corporations</p>
                         </div>
                         <div className="border border-white/10 p-6 rounded-lg bg-white/5">
-                            <h3 className="text-lg font-bold text-white mb-2">Section 174 (R&D)</h3>
-                            <p className="text-white/60 text-sm">New capitalization rules for software development. We categorize expenses correctly preventing huge tax bills.</p>
+                            <h3 className="text-lg font-bold text-white mb-2">Penalty</h3>
+                            <p className="text-white/60 text-sm">Starts from $10,000 – $25,000 per missed filing</p>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import PartnerLogos from './components/PartnerLogos';
 import ProblemSection from './components/ProblemSection';
 import WhyLedgersCFO from './components/WhyLedgersCFO';
 import ServicesList from './components/ServicesList';
-import Interactivity from './components/Interactivity';
+
 import Calculators from './components/Calculators';
 import ComplianceSection from './components/ComplianceSection';
 import PricingSection from './components/PricingSection';
@@ -23,9 +23,8 @@ const App: React.FC = () => {
         <ProblemSection />
         <WhyLedgersCFO />
         <ServicesList />
-        <Interactivity />
-        <Calculators />
         <ComplianceSection />
+        <Calculators />
         <PricingSection />
         <Testimonials />
       </main>

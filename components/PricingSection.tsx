@@ -20,10 +20,6 @@ const PricingSection: React.FC = () => {
                                 <Check className="text-ink" size={20} />
                                 <span className="text-ink">Scale up or down as needed</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <Check className="text-ink" size={20} />
-                                <span className="text-ink">Cancel anytime with 30 days notice</span>
-                            </div>
                         </div>
                     </div>
 
@@ -34,12 +30,12 @@ const PricingSection: React.FC = () => {
                         <h3 className="text-2xl font-bold text-ink mb-2">Early-Stage Plan</h3>
                         <div className="flex items-baseline gap-1 mb-6">
                             <span className="text-sm text-muted font-medium">Starts at</span>
-                            <span className="text-5xl font-serif text-ink">$1,000</span>
+                            <span className="text-5xl font-serif text-ink">$2,000</span>
                             <span className="text-muted">/ year</span>
                         </div>
 
                         <p className="text-muted mb-8 leading-relaxed">
-                            Perfect for Seed to Series A startups. Includes bookkeeping, tax compliance, and monthly CFO review calls.
+                            Perfect for pre-revenue to Series A startups.
                         </p>
 
                         <a href="#book" className="block w-full text-center bg-ink text-white font-medium py-4 hover:bg-black transition-colors">

@@ -15,9 +15,12 @@ const ServicesList: React.FC = () => {
     return (
         <section id="services" className="py-24 bg-paper border-t border-black/5">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 className="text-4xl font-serif text-ink mb-16 px-4">
-                    Services. <span className="text-muted italic">Everything you need. Nothing you don't.</span>
-                </h2>
+                <div className="mb-16 px-4">
+                    <h2 className="text-4xl font-serif text-ink mb-4">
+                        Services. <span className="text-muted italic">Everything you need. Nothing you don't.</span>
+                    </h2>
+                    <p className="text-lg text-muted">Everything below is owned by one team. No handoffs.</p>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
                     {services.map((service, i) => (
