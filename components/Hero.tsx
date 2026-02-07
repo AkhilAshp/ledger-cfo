@@ -5,11 +5,19 @@ import { ArrowRight } from 'lucide-react';
 const slides = [
   {
     headline: "Your Finance Partner for US ↔ India Startups",
-    subheadline: "Bookkeeping, Tax, CFO & Finance Ops for founders operating across the US–India corridor."
+    subheadline: "Bookkeeping, Tax, CFO services & Finance Ops for founders operating across the US–India corridor."
   },
   {
     headline: "Always Due-Diligence Ready",
     subheadline: "Clean books, timely filings, zero compliance stress — raise funds anytime, confidently."
+  },
+  {
+    headline: "Incorporate & Expand to the US",
+    subheadline: "US entity setup, banking, tax & ongoing cross-border compliance — done right from Day 1."
+  },
+  {
+    headline: "Fractional CFO for Tech Founders",
+    subheadline: "Clarity on cash, burn, metrics & decisions — without hiring a full-time CFO."
   }
 ];
 
@@ -63,12 +71,6 @@ const Hero: React.FC = () => {
               >
                 Book a Free CFO Call
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-ink font-medium px-8 py-4 rounded-sm border border-black/10 hover:bg-black/5 transition-all text-lg"
-              >
-                See How It Works
               </a>
             </div>
 

@@ -14,9 +14,14 @@ const ProblemSection: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div>
-                        <h2 className="text-5xl sm:text-6xl font-serif text-ink leading-tight mb-6">
-                            Finance shouldn’t slow you down - but for most founders, it still does.
+                        <h2 className="text-5xl sm:text-6xl font-serif text-ink leading-tight mb-2">
+                            Finance shouldn’t slow you down.
                         </h2>
+                        <h2 className="text-xl sm:text-xl font-sans text-muted font-normal mb-6 text-right">
+                            For most founders, it does.
+                        </h2>
+
+
                     </div>
 
                     <div className="space-y-8">

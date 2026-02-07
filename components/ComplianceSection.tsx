@@ -5,7 +5,7 @@ const ComplianceSection: React.FC = () => {
     return (
         <section className="py-24 bg-ink text-paper">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row gap-12 items-start">
+                <div className="flex flex-col md:flex-row gap-12 items-start md:items-center">
                     <div className="flex-1">
                         <div className="flex items-center gap-3 mb-6 text-white/50">
                             <ShieldAlert size={24} />
@@ -21,7 +21,7 @@ const ComplianceSection: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="flex-1 grid grid-cols-1 gap-6 w-full">
+                    <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                         <div className="border border-white/10 p-6 rounded-lg bg-white/5">
                             <h3 className="text-lg font-bold text-white mb-2">Form 5471</h3>
                             <p className="text-white/60 text-sm">Mandatory for foreign investments</p>
@@ -31,8 +31,12 @@ const ComplianceSection: React.FC = () => {
                             <p className="text-white/60 text-sm">Mandatory for foreign-owned US corporations</p>
                         </div>
                         <div className="border border-white/10 p-6 rounded-lg bg-white/5">
-                            <h3 className="text-lg font-bold text-white mb-2">Penalty</h3>
-                            <p className="text-white/60 text-sm">Starts from $10,000 – $25,000 per missed filing</p>
+                            <h3 className="text-lg font-bold text-white mb-2">FinCEN 114 (FBAR)</h3>
+                            <p className="text-white/60 text-sm">Any foreign bank account with &gt;$10k balance must be reported</p>
+                        </div>
+                        <div className="border border-white/10 p-6 rounded-lg bg-white/5">
+                            <h3 className="text-lg font-bold text-white mb-2">Section 174 (R&D)</h3>
+                            <p className="text-white/60 text-sm">New capitalization rules for software development expenses</p>
                         </div>
                     </div>
                 </div>
