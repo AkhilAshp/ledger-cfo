@@ -1,24 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const slides = [
   {
     headline: "Your Finance Partner for US ↔ India Startups",
-    subheadline: "Bookkeeping, Tax, CFO services & Finance Ops for founders operating across the US–India corridor."
+    subheadline:
+      "Bookkeeping, Tax, CFO services & Finance Ops for founders operating across the US–India corridor.",
   },
   {
     headline: "Always Due-Diligence Ready",
-    subheadline: "Clean books, timely filings, zero compliance stress - raise funds anytime, confidently."
+    subheadline:
+      "Clean books, timely filings, zero compliance stress - raise funds anytime, confidently.",
   },
   {
     headline: "Incorporate & Expand to the US",
-    subheadline: "US entity setup, banking, tax & ongoing cross-border compliance, done right from Day 1."
+    subheadline:
+      "US entity setup, banking, tax & ongoing cross-border compliance, done right from Day 1.",
   },
   {
     headline: "Fractional CFO for Tech Founders",
-    subheadline: "Clarity on cash, burn, metrics & decisions - without hiring a full-time CFO."
-  }
+    subheadline:
+      "Clarity on cash, burn, metrics & decisions - without hiring a full-time CFO.",
+  },
 ];
 
 const logos = [
@@ -36,6 +40,7 @@ const logos = [
   "/logos/wayto.png",
 ];
 
+// duplicate for seamless marquee
 const marqueeLogos = [...logos, ...logos];
 
 const Hero: React.FC = () => {
@@ -53,8 +58,8 @@ const Hero: React.FC = () => {
     <section className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden bg-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl">
-          {/* Fixed height container for the slider to prevent layout shift */}
-          <div className="h-[280px] sm:h-[320px] relative mb-8 sm:mb-12">
+          {/* Headline Slider */}
+          <div className="h-[280px] sm:h-[320px] relative mb-6 sm:mb-8">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
@@ -75,13 +80,13 @@ const Hero: React.FC = () => {
             </AnimatePresence>
           </div>
 
-          {/* Static CTAs and Footer */}
+          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-12">
               <a
                 href="https://cal.com/ayush-garg-ledger/discovery-call"
                 target="_blank"
@@ -89,15 +94,19 @@ const Hero: React.FC = () => {
                 className="bg-ink text-white font-medium px-8 py-4 rounded-sm hover:bg-black transition-all flex items-center gap-2 group text-lg"
               >
                 Book a Free CFO Call
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
               </a>
             </div>
 
-            {/* Marquee Section */}
+            {/* Trusted By + Marquee */}
             <div className="w-full overflow-hidden mask-linear-fade">
               <p className="text-sm font-bold tracking-[0.2em] text-muted uppercase mb-6">
                 Trusted by 100+ startups and businesses
               </p>
+
               <div className="relative w-full overflow-hidden">
                 <motion.div
                   className="flex items-center gap-12"
@@ -114,7 +123,7 @@ const Hero: React.FC = () => {
                       src={logo}
                       alt="Partner logo"
                       className="
-                        h-8 w-auto object-contain
+                        h-9 w-auto object-contain
                         grayscale opacity-60
                         hover:grayscale-0 hover:opacity-100
                         transition-all duration-300
@@ -132,5 +141,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-
