@@ -118,11 +118,11 @@ const Footer: React.FC = () => {
         {/* Legal Disclaimer */}
         <div className="mt-8 text-white/20 text-[10px] leading-relaxed max-w-2xl">
           <p>
-            LedgerCFO is a provider of back-office services, including bookkeeping,
+            LedgersCFO is a provider of back-office services, including bookkeeping,
             controller services, and CFO services.
           </p>
           <p className="mt-2">
-            LedgerCFO is not a public accounting firm and does not provide services
+            LedgersCFO is not a public accounting firm and does not provide services
             that would require a license to practice public accountancy.
           </p>
         </div>
