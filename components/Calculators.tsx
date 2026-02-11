@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Calculators: React.FC = () => {
     const [monthlySpend, setMonthlySpend] = useState(50000);
@@ -60,6 +61,18 @@ const Calculators: React.FC = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <div className="mt-12 text-center">
+                    <Link
+                        to="/resources/calculators"
+                        className="inline-block bg-ink text-white px-8 py-3 rounded-sm font-medium hover:bg-black transition-colors"
+                    >
+                        More Calculators →
+                    </Link>
+                    <p className="text-sm text-muted mt-3">
+                        Explore 9 more financial calculators for startups
+                    </p>
                 </div>
             </div>
         </section>
