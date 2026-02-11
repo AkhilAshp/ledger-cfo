@@ -12,6 +12,9 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 // import BlogList from './components/blog/BlogList';
 // import BlogPost from './components/blog/BlogPost';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
+
 import CalculatorsPage from './components/pages/CalculatorsPage';
 import ScrollToTop from './components/ScrollToTop';
 import HashScrollHandler from './components/HashScrollHandler';
@@ -43,8 +46,8 @@ const App: React.FC = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/resources/calculators" element={<CalculatorsPage />} />
             <Route path="/resources/calculators/:calculatorId" element={<CalculatorsPage />} />
-            {/* <Route path="/blog" element={<BlogList />} /> */}
-            {/* <Route path="/blog/:slug" element={<BlogPost />} /> */}
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />
