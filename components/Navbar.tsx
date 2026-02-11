@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
@@ -10,20 +11,20 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <span className="font-serif text-2xl font-medium text-ink tracking-wider">
                 LedgersCFO
               </span>
-
-
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#problem" className="text-sm font-medium text-muted hover:text-ink transition-colors">Problem</a>
-            <a href="#services" className="text-sm font-medium text-muted hover:text-ink transition-colors">Services</a>
-            <a href="#pricing" className="text-sm font-medium text-muted hover:text-ink transition-colors">Pricing</a>
+            <Link to="/#problem" className="text-sm font-medium text-muted hover:text-ink transition-colors">Problem</Link>
+            <Link to="/#services" className="text-sm font-medium text-muted hover:text-ink transition-colors">Services</Link>
+            <Link to="/#pricing" className="text-sm font-medium text-muted hover:text-ink transition-colors">Pricing</Link>
+            <Link to="/resources/calculators" className="text-sm font-medium text-muted hover:text-ink transition-colors">Resources</Link>
+            <Link to="/blog" className="text-sm font-medium text-muted hover:text-ink transition-colors">Blog</Link>
           </div>
 
           {/* Desktop Actions */}
@@ -55,9 +56,11 @@ const Navbar: React.FC = () => {
             className="md:hidden bg-paper overflow-hidden border-b border-black/5"
           >
             <div className="px-6 pt-4 pb-8 space-y-4">
-              <a href="#problem" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Problem</a>
-              <a href="#services" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Services</a>
-              <a href="#pricing" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Pricing</a>
+              <Link to="/#problem" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Problem</Link>
+              <Link to="/#services" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Services</Link>
+              <Link to="/#pricing" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Pricing</Link>
+              <Link to="/resources/calculators" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Resources</Link>
+              <Link to="/blog" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-ink">Blog</Link>
               <div className="pt-4">
                 <a href="https://cal.com/ayush-garg-ledger/discovery-call" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="block w-full text-center bg-ink text-white px-5 py-3 rounded-sm font-medium">
                   Book a Free CFO Call
