@@ -65,3 +65,34 @@ export async function fetchBlog(slug: string): Promise<Blog> {
     const json = await res.json();
     return json.data;
 }
+
+/**
+ * Fetch all blogs for archives (handles pagination to get all posts)
+ * Iterates through all pages to retrieve the full list.
+ */
+export async function fetchAllBlogs(): Promise<Blog[]> {
+    try {
+        // Fetch first page to get pagination data
+        const firstPage = await fetchBlogs(1, 50);
+        let allBlogs = [...firstPage.data];
+        const { totalPages } = firstPage.pagination;
+
+        // If there are more pages, fetch them in parallel
+        if (totalPages > 1) {
+            const pagePromises = [];
+            for (let page = 2; page <= totalPages; page++) {
+                pagePromises.push(fetchBlogs(page, 50));
+            }
+
+            const responses = await Promise.all(pagePromises);
+            responses.forEach(response => {
+                allBlogs = [...allBlogs, ...response.data];
+            });
+        }
+
+        return allBlogs;
+    } catch (error) {
+        console.error("Failed to fetch all blogs:", error);
+        throw error;
+    }
+}
