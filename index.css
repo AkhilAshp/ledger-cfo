@@ -1,0 +1,80 @@
+:root {
+  --bg-primary: #f8f7f5;
+  --bg-secondary: #ebe9e4;
+  --text-primary: #1c1c1c;
+  --text-secondary: #525252;
+  --accent-muted: #dcdcdc;
+
+  /* Status colors - Muted */
+  --status-good: #3e5c46;
+  --status-alert: #8c3b2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  /* Cleaner, more corporate than Instrument Serif, or keep serif for contrast? User asked for "Strong typography". */
+  /* Prompt said "Professional, not flashy". Boardroom feel. */
+  /* Let's stick to Inter for headings for a very clean Swiss style, or use Instrument Serif for just the H1/H2 if we want that 'editorial' feel. */
+  /* Let's use Instrument Serif for key headers to keep some distinctiveness, but keep it tight. */
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  /* Serif usually looks better regular */
+  letter-spacing: -0.02em;
+}
+
+.font-sans-strong {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prose Headings Override */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
