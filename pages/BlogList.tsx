@@ -3,7 +3,7 @@ import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { fetchBlogs, fetchAllBlogs } from "../api/blogApi";
 import { Blog } from "../types/blog";
-import ArchiveSidebar from "../pages/ArchiveSidebar";
+import ArchiveSidebar from "../pages/ArchiveSideBar";
 
 /* ─── Pagination Component ──────────────────────────────────────── */
 
