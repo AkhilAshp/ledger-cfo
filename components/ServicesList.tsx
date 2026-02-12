@@ -3,7 +3,7 @@ import React from 'react';
 const ServicesList: React.FC = () => {
     const services = [
         { title: "Fractional CFO", desc: "Planning, forecasting, and decision support — not slides for the sake of slides." },
-        { title: "Incorporation", desc: "Entity setup that scales. Delaware C-Corps, 83(b) elections handled correctly from day one." },
+        { title: "Incorporation", desc: "Entity setup that scales Delaware C-Corps" },
         { title: "Bookkeeping", desc: "Accurate, accrual-basis books delivered on time. Every month." },
         { title: "Tax & Compliance", desc: "Federal, state, and local filings. R&D credits identified and claimed." },
         { title: "Payroll", desc: "Domestic and international payroll setup and management." },
