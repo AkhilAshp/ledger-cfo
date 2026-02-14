@@ -71,7 +71,7 @@ const Calculators: React.FC = () => {
                         More Calculators →
                     </Link>
                     <p className="text-sm text-muted mt-3">
-                        Explore 9 more financial calculators for startups
+                        Explore more financial calculators for startups.
                     </p>
                 </div>
             </div>
@@ -80,3 +80,4 @@ const Calculators: React.FC = () => {
 };
 
 export default Calculators;
+
