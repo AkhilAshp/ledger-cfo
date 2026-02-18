@@ -14,6 +14,11 @@ import BreakEvenCalculator from '../calculators/BreakEvenCalculator';
 import CashConversionCalculator from '../calculators/CashConversionCalculator';
 import LedgersCFOSavingsCalculator from '../calculators/LedgersCFOSavingsCalculator';
 import ValuationImpactCalculator from '../calculators/ValuationImpactCalculator';
+import RnDTaxCreditCalculator from '../calculators/RnDTaxCreditCalculator';
+import ComplianceCostCalculator from '../calculators/ComplianceCostCalculator';
+import IncomeTaxCalculator from '../calculators/IncomeTaxCalculator';
+import DueDateCalculator from '../calculators/DueDateCalculator';
+import IncorporationCostCalculator from '../calculators/IncorporationCostCalculator';
 
 interface Calculator {
     id: string;
@@ -100,6 +105,41 @@ const calculators: Calculator[] = [
         descriptor: 'Metric optimization',
         description: 'Estimate how improved financial metrics can increase your company valuation and investor appeal.',
         component: ValuationImpactCalculator
+    },
+    {
+        id: 'rnd-tax-credit',
+        name: 'R&D Tax Credit',
+        descriptor: 'Tax savings',
+        description: 'Estimate your potential R&D tax credit using Regular or Alternative Simplified methods.',
+        component: RnDTaxCreditCalculator
+    },
+    {
+        id: 'compliance-cost',
+        name: 'Compliance Cost',
+        descriptor: 'Annual expenses',
+        description: 'Estimate annual compliance costs including state filings, payroll, and tax preparation.',
+        component: ComplianceCostCalculator
+    },
+    {
+        id: 'income-tax',
+        name: 'Income Tax Calculator',
+        descriptor: 'Tax liability',
+        description: 'Estimate federal and state income tax liability based on your filing status and location.',
+        component: IncomeTaxCalculator
+    },
+    {
+        id: 'due-date',
+        name: 'Filing Due Dates',
+        descriptor: 'Important deadlines',
+        description: 'Find your federal and state tax filing due dates based on your entity type and fiscal year.',
+        component: DueDateCalculator
+    },
+    {
+        id: 'incorporation-cost',
+        name: 'Incorporation Cost',
+        descriptor: 'Startup formation',
+        description: 'Calculate the one-time and first-year costs of incorporating your business in various states.',
+        component: IncorporationCostCalculator
     }
 ];
 
