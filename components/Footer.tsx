@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:hello@ledgerscfo.com"
+                  href="ayushcagarg@gmail.com"
                   className="text-white/60 hover:text-white transition-colors"
                 >
                   <Mail size={20} />
