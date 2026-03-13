@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-ink text-white font-medium px-8 py-4 rounded-sm hover:bg-black transition-all flex items-center gap-2 group text-lg"
               >
-                Book a Free CFO Call
+                Book a consultation Call
                 <ArrowRight
                   size={18}
                   className="group-hover:translate-x-1 transition-transform"

@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="bg-white text-ink font-medium px-8 py-4 rounded-sm hover:bg-gray-100 transition-all text-lg inline-block"
             >
-              Book a Free CFO Consultation
+              Book a consultation Call
             </a>
             <p className="text-white/40 text-sm">
               We’ll tell you if we can help. If not, we’ll say so.

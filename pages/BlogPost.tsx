@@ -486,7 +486,7 @@ const BlogPost: React.FC = () => {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center h-12 px-10 bg-ink text-white font-medium rounded-full hover:bg-ink/90 transition-colors relative"
                                 >
-                                    Book a Free CFO Call
+                                    Book a consultation Call
                                 </a>
                             </div>
                         </article>
