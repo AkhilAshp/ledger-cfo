@@ -8,21 +8,23 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              paper: '#f8f7f5',
-              ink: '#1c1c1c',
-              subtle: '#ebe9e4',
-              muted: '#525252'
-            },
-            fontFamily: {
-              serif: ['Instrument Serif', 'serif'],
-              sans: ['Inter', 'sans-serif'],
+      if (typeof tailwind !== 'undefined') {
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  paper: '#f8f7f5',
+                  ink: '#1c1c1c',
+                  subtle: '#ebe9e4',
+                  muted: '#525252'
+                },
+                fontFamily: {
+                  serif: ['Instrument Serif', 'serif'],
+                  sans: ['Inter', 'sans-serif'],
+                }
+              }
             }
           }
-        }
       }
     </script>
 

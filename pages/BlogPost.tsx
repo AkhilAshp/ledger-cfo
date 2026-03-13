@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import {
     Calendar,
     ArrowLeft,
@@ -315,6 +316,20 @@ const BlogPost: React.FC = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{blog.post_title} | LedgersCFO</title>
+                <meta name="description" content={blog.meta_description || blog.post_title} />
+                <link rel="canonical" href={`https://ledgerscfo.com/blog/${blog.slug || slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={blog.post_title} />
+                <meta property="og:description" content={blog.meta_description || blog.post_title} />
+                <meta property="og:url" content={`https://ledgerscfo.com/blog/${blog.slug || slug}`} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={blog.post_title} />
+                <meta name="twitter:description" content={blog.meta_description || blog.post_title} />
+                {blog.featured_image && <meta property="og:image" content={blog.featured_image} />}
+                {blog.featured_image && <meta name="twitter:image" content={blog.featured_image} />}
+            </Helmet>
             <ReadingProgress />
             <BackToTop />
 

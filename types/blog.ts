@@ -5,4 +5,7 @@ export interface Blog {
     post_content?: string;
     post_date: string;
     post_name: string;
+    slug?: string;
+    meta_description?: string;
+    featured_image?: string;
 }
