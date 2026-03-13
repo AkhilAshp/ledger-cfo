@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import puppeteer from 'puppeteer';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,6 +37,8 @@ async function generateRoutes() {
 
         packageJson.reactSnap = packageJson.reactSnap || {};
         packageJson.reactSnap.include = routes;
+        packageJson.reactSnap.puppeteerExecutablePath = puppeteer.executablePath();
+        packageJson.reactSnap.puppeteerArgs = ["--no-sandbox", "--disable-setuid-sandbox"];
 
         fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
@@ -54,6 +57,8 @@ async function generateRoutes() {
 
         packageJson.reactSnap = packageJson.reactSnap || {};
         packageJson.reactSnap.include = routes;
+        packageJson.reactSnap.puppeteerExecutablePath = puppeteer.executablePath();
+        packageJson.reactSnap.puppeteerArgs = ["--no-sandbox", "--disable-setuid-sandbox"];
 
         fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     }
