@@ -40,7 +40,7 @@ async function generateRoutes() {
         packageJson.reactSnap.puppeteerExecutablePath = process.env.VITE_PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath();
         packageJson.reactSnap.puppeteerArgs = ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"];
         packageJson.reactSnap.concurrency = 4;
-        packageJson.reactSnap.skipThirdPartyRequests = true;
+        packageJson.reactSnap.skipThirdPartyRequests = false;
 
         fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
@@ -62,7 +62,7 @@ async function generateRoutes() {
         packageJson.reactSnap.puppeteerExecutablePath = process.env.VITE_PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath();
         packageJson.reactSnap.puppeteerArgs = ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"];
         packageJson.reactSnap.concurrency = 4;
-        packageJson.reactSnap.skipThirdPartyRequests = true;
+        packageJson.reactSnap.skipThirdPartyRequests = false;
 
         fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     }
