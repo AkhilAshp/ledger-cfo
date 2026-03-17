@@ -10,7 +10,17 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
     },
     build: {
-      target: 'es2015'
+      target: 'es2015',
+      chunkSizeWarningLimit: 800,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          }
+        }
+      }
     },
     plugins: [react()],
     define: {

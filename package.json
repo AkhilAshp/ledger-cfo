@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/prerender-routes.js",
-    "build": "vite build && react-snap",
+    "build": "vite build && node -e \"if(!process.env.VERCEL) { require('child_process').execSync('react-snap', {stdio: 'inherit'}) } else { console.log('Skipping react-snap on Vercel...') }\"",
     "preview": "vite preview"
   },
   "reactSnap": {
