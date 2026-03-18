@@ -140,7 +140,7 @@ const TableOfContents: React.FC<{ headings: Heading[] }> = ({ headings }) => {
             </div>
 
             {/* ── Links ── */}
-            <ul className="py-2" role="list">
+            <ul className="py-2 overflow-y-auto max-h-[60vh]" role="list">
                 {headings.map(({ id, text }) => {
                     const isActive = activeId === id;
 

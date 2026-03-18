@@ -12,13 +12,10 @@ import RevenueGrowthCalculator from '../calculators/RevenueGrowthCalculator';
 import OpExBreakdownCalculator from '../calculators/OpExBreakdownCalculator';
 import BreakEvenCalculator from '../calculators/BreakEvenCalculator';
 import CashConversionCalculator from '../calculators/CashConversionCalculator';
-import LedgersCFOSavingsCalculator from '../calculators/LedgersCFOSavingsCalculator';
-import ValuationImpactCalculator from '../calculators/ValuationImpactCalculator';
 import RnDTaxCreditCalculator from '../calculators/RnDTaxCreditCalculator';
 import ComplianceCostCalculator from '../calculators/ComplianceCostCalculator';
 import IncomeTaxCalculator from '../calculators/IncomeTaxCalculator';
 import DueDateCalculator from '../calculators/DueDateCalculator';
-import IncorporationCostCalculator from '../calculators/IncorporationCostCalculator';
 
 interface Calculator {
     id: string;
@@ -93,20 +90,6 @@ const calculators: Calculator[] = [
         component: CashConversionCalculator
     },
     {
-        id: 'ledgerscfo-savings',
-        name: 'What LedgersCFO Saves You',
-        descriptor: 'Cost comparison',
-        description: 'Calculate cost and time savings compared to traditional full-time or fractional CFO options.',
-        component: LedgersCFOSavingsCalculator
-    },
-    {
-        id: 'valuation-impact',
-        name: 'Valuation Impact',
-        descriptor: 'Metric optimization',
-        description: 'Estimate how improved financial metrics can increase your company valuation and investor appeal.',
-        component: ValuationImpactCalculator
-    },
-    {
         id: 'rnd-tax-credit',
         name: 'R&D Tax Credit',
         descriptor: 'Tax savings',
@@ -133,13 +116,6 @@ const calculators: Calculator[] = [
         descriptor: 'Important deadlines',
         description: 'Find your federal and state tax filing due dates based on your entity type and fiscal year.',
         component: DueDateCalculator
-    },
-    {
-        id: 'incorporation-cost',
-        name: 'Incorporation Cost',
-        descriptor: 'Startup formation',
-        description: 'Calculate the one-time and first-year costs of incorporating your business in various states.',
-        component: IncorporationCostCalculator
     }
 ];
 

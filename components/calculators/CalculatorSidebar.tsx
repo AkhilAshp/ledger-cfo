@@ -97,7 +97,7 @@ const CalculatorSidebar: React.FC<CalculatorSidebarProps> = ({
                         rel="noopener noreferrer"
                         className="block w-full text-center bg-ink text-white px-4 py-3 rounded-sm text-sm font-medium hover:bg-black transition-colors"
                     >
-                        Book a CFO Call
+                        Book a Consultation call
                     </a>
                 </div>
             </aside>
