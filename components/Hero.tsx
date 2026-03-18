@@ -26,18 +26,19 @@ const slides = [
 ];
 
 const logos = [
+  "/logos/2Careai.png",
   "/logos/42.png",
+  "/logos/botgauge.png",
   "/logos/confidohealth.png",
+  "/logos/forum.png",
   "/logos/humanic.png",
+  "/logos/indesnine.png",
   "/logos/kwanzoo.png",
-  "/logos/maya.png",
-  "/logos/nebulaiq.png",
-  "/logos/reachiso.png",
-  "/logos/roworksai.png",
+  "/logos/leelalife.png",
+  "/logos/recordskeeperai.png",
+  "/logos/salesrobot.png",
   "/logos/scalekit.png",
-  "/logos/shelfex.png",
   "/logos/vibrantlabs.png",
-  "/logos/wayto.png",
 ];
 
 const marqueeLogos = [...logos, ...logos];
@@ -86,7 +87,6 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-16">
-
               <a
                 href="https://cal.com/ayush-garg-ledger/discovery-call"
                 target="_blank"
@@ -99,7 +99,6 @@ const Hero: React.FC = () => {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </a>
-
             </div>
 
             {/* Funded By Section */}
@@ -107,29 +106,29 @@ const Hero: React.FC = () => {
               <p className="text-xs font-bold tracking-[0.2em] text-muted uppercase mb-6">
                 OUR CLIENTS ARE FUNDED BY
               </p>
-              <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+              <div className="flex justify-between items-center w-full gap-4 overflow-x-auto opacity-70 grayscale hover:grayscale-0 transition-all duration-500 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {[
                   "Y Combinator",
                   "Together Fund",
                   "WestBridge Capital",
                   "Forum Ventures",
                   "Unusual Ventures",
+                  "Blume Ventures",
                 ].map((partner) => (
                   <span
                     key={partner}
-                    className="text-xl sm:text-2xl font-serif font-bold text-ink whitespace-nowrap"
+                    className="text-sm sm:text-base md:text-lg lg:text-xl font-serif font-bold text-ink whitespace-nowrap"
                   >
                     {partner}
                   </span>
                 ))}
               </div>
             </div>
-
           </motion.div>
         </div>
       </div>
 
-      {/* Trusted By + Marquee (Moved outside to span full screen width) */}
+      {/* Trusted By + Marquee */}
       <div className="w-full relative z-10 mt-4 sm:mt-12 pb-4">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-5">
           <motion.div
@@ -157,10 +156,13 @@ const Hero: React.FC = () => {
         >
           <motion.div
             className="flex items-center gap-4 py-2"
-            style={{ width: "max-content", paddingLeft: "max(1rem, calc((100vw - 80rem) / 2))" }}
+            style={{
+              width: "max-content",
+              paddingLeft: "max(1rem, calc((100vw - 80rem) / 2))",
+            }}
             animate={{ x: ["0%", "-50%"] }}
             transition={{
-              duration: 30,
+              duration: 40,
               ease: "linear",
               repeat: Infinity,
             }}
@@ -169,12 +171,12 @@ const Hero: React.FC = () => {
             {marqueeLogos.map((logo, i) => (
               <div
                 key={i}
-                className="flex items-center px-6 py-3 border border-black/10 rounded-md bg-white/70 backdrop-blur-sm flex-shrink-0 hover:border-black/30 transition-all duration-300"
+                className="flex items-center px-6 py-3 border border-black/10 rounded-md bg-white/70 backdrop-blur-sm flex-shrink-0 hover:border-black/30 hover:bg-white hover:scale-105 transition-all duration-300"
               >
                 <img
                   src={logo}
                   alt="Partner logo"
-                  className="h-6 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="h-6 sm:h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                 />
               </div>
             ))}
